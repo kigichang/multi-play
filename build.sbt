@@ -6,7 +6,7 @@ lazy val core = project in file("core")
 
 lazy val admin= (project in file("modules/admin")).enablePlugins(PlayScala).dependsOn(core)
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala).dependsOn(core, admin).aggregate(core, admin)
+lazy val root = (project in file(".")).enablePlugins(PlayScala).dependsOn(core).aggregate(core, admin)
 
 scalaVersion := "2.11.1"
 
