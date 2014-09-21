@@ -1,4 +1,7 @@
-This is your new Play application
-=================================
+# This is a template about multi-project for Playframework
 
-This file will be packaged with your application, when using `activator dist`.
+Branch master is sample about subproject is part of root.
+
+The other is about subproject is NOT part of root.
+
+
