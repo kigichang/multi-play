@@ -2,6 +2,8 @@ name := """multi-play"""
 
 version := "1.0-SNAPSHOT"
 
+EclipseKeys.skipParents in ThisBuild := false
+
 lazy val core = project in file("core")
 
 lazy val admin= (project in file("modules/admin")).enablePlugins(PlayScala).dependsOn(core)
